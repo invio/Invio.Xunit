@@ -3,7 +3,7 @@ pull_requests:
   do_not_increment_build_number: true
 environment:
   COVERALLS_REPO_TOKEN:
-    secure: 8ypKHp5Q5wUFaul/0dkyVBxA6bmt9/7Sl/+hHSTkCZlaM5+tmzykSq7QpzHg9wML
+    secure: 8R/tSu8wvwudMRGt8Ngxhyh9qQVebOLLZSZGmLGs711/wF1PzK4PEEVYCjR/lt2l
 branches:
   only:
   - master
