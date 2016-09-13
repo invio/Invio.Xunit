@@ -11,6 +11,11 @@
 
 # Invio.Xunit
 
+[![Appveyor](https://ci.appveyor.com/api/projects/status/hwvtgu0t5rg7huv8/branch/master?svg=true)](https://ci.appveyor.com/project/carusology/invio-extensions-dependencyinjection/branch/master)
+[![Travis CI](https://img.shields.io/travis/invio/Invio.Xunit.svg?maxAge=3600&label=travis)](https://travis-ci.org/invio/Invio.Xunit)
+[![NuGet](https://img.shields.io/nuget/v/Invio.Xunit.svg)](https://www.nuget.packages/org/Invio.Xunit/)
+[![Coverage](https://coveralls.io/repos/github/invio/Invio.Xunit/badge.svg?branch=master)](https://coveralls.io/github/invio/Invio.Xunit?branch=master)
+
 Invio's extensions to xunit that is based on our coding practices and standards.
 
 # Installation
