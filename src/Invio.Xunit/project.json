@@ -1,0 +1,43 @@
+{
+  "name": "Invio.Xunit",
+  "title": "Invio Extensions to XUnit 2.2.0",
+  "version": "0.1.0",
+
+  "authors": [ "Saqib Rokadia <saqib@invioinc.com>" ],
+
+  "buildOptions": {
+    "debugType": "portable",
+  },
+
+  "tooling": {
+    "defaultNamespace": "Invio.Xunit"
+  },
+
+  "packOptions": {
+    "summary": "Extensions to XUnit for Invio's Coding Style and Standards",
+    "tags": [ "xunit", "test" ],
+    "owners": [ "Invio, Incorporated" ],
+    "licenseUrl": "https://github.com/invio/Invio.Xunit/blob/master/LICENSE.txt",
+    "projectUrl": "https://github.com/invio/Invio.Xunit/",
+    "requireLicenseAcceptance": false,
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:invio/Invio.Xunit"
+    }
+  },
+
+  "dependencies": {
+    "CategoryTraits.Xunit2": "2.0.13",
+    "xunit": "2.2.0-*"
+  },
+
+  "frameworks": {
+
+    "netstandard1.3": {
+      "imports": [
+        "dotnet5.4",
+        "portable-net451+win8"
+      ]
+    }
+  }
+}
