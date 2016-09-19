@@ -19,7 +19,7 @@
 Invio's extensions to xunit that is based on our coding practices and standards.
 
 # Installation
-The latest version of this package is available on MyGet. To install include the myget feed in your NuGet.Config at the root of your project, and add the dependency to your project.json.
+The latest version of this package is available on NuGet. To install add the dependency to your project.json.
 
 ```shell
 PM> Install-Package Invio.Xunit
