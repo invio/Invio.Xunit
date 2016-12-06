@@ -1,6 +1,4 @@
 {
-  "version": "0.1.0",
-
   "buildOptions": {
     "debugType": "portable"
   },
@@ -10,10 +8,7 @@
   },
 
   "dependencies": {
-    "Invio.Xunit": {
-      "version": "0.1.0",
-      "target": "project"
-    },
+    "Invio.Xunit": { "target": "project" },
     "dotnet-test-xunit": "2.2.0-*",
     "xunit": "2.2.0-*"
   },
@@ -24,7 +19,7 @@
     "netcoreapp1.0": {
       "dependencies": {
         "Microsoft.NETCore.App": {
-          "version": "1.0.0",
+          "version": "1.1.0",
           "type": "platform"
         }
       },

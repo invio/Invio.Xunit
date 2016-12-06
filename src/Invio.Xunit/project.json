@@ -32,7 +32,6 @@
   },
 
   "frameworks": {
-
     "netstandard1.3": {
       "imports": [
         "dotnet5.4",
@@ -40,4 +39,5 @@
       ]
     }
   }
+
 }
