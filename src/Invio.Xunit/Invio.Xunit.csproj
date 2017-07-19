@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <AssemblyTitle>Invio Extensions to XUnit 2.2.0</AssemblyTitle>
-    <VersionPrefix>0.1.1</VersionPrefix>
+    <VersionPrefix>0.1.2</VersionPrefix>
     <Authors>Saqib Rokadia &lt;saqib@invioinc.com&gt;</Authors>
     <TargetFramework>netstandard1.3</TargetFramework>
     <DebugType>full</DebugType>
