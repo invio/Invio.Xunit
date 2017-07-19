@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>Invio Extensions to XUnit 2.2.0</AssemblyTitle>
+    <VersionPrefix>0.1.1</VersionPrefix>
+    <Authors>Saqib Rokadia &lt;saqib@invioinc.com&gt;</Authors>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <DebugType>full</DebugType>
+    <AssemblyName>Invio.Xunit</AssemblyName>
+    <PackageId>Invio.Xunit</PackageId>
+    <PackageTags>xunit;test</PackageTags>
+    <PackageProjectUrl>https://github.com/invio/Invio.Xunit/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/invio/Invio.Xunit/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git@github.com:invio/Invio.Xunit</RepositoryUrl>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.4;portable-net451+win8</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CategoryTraits.Xunit2" Version="2.0.13" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
