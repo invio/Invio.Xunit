@@ -9,21 +9,9 @@ if [ -d $artifactsFolder ]; then
   rm -R $artifactsFolder
 fi
 
-dotnet restore
+dotnet restore ./src/Invio.Xunit
+dotnet restore ./test/Invio.Xunit.Tests
 
-# Ideally we would use the 'dotnet test' command to test netcoreapp and net46 so restrict for now
-# but this currently doesn't work due to https://github.com/dotnet/cli/issues/3073 so restrict to netcoreapp
+dotnet test ./test/Invio.Xunit.Tests/Invio.Xunit.Tests.csproj -c Release -f netcoreapp1.0
 
-dotnet test ./test/Invio.Xunit.Tests -c Release -f netcoreapp1.0
-
-# Instead, run directly with mono for the full .net version
-dotnet build ./test/Invio.Xunit.Tests -c Release -f net46
-
-mono \
-./test/Invio.Xunit.Tests/bin/Release/net46/*/dotnet-test-xunit.exe \
-./test/Invio.Xunit.Tests/bin/Release/net46/*/Invio.Xunit.Tests.dll
-
-revision=${TRAVIS_JOB_ID:=1}
-revision=$(printf "%04d" $revision)
-
-dotnet pack ./src/Invio.Xunit -c Release -o $artifactsFolder
+dotnet pack ./src/Invio.Xunit -c Release -o ../../artifacts
