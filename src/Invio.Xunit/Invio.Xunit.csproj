@@ -5,7 +5,7 @@
     <VersionPrefix>0.1.2</VersionPrefix>
     <Authors>Saqib Rokadia &lt;saqib@invioinc.com&gt;</Authors>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <DebugType>full</DebugType>
+    <DebugType>portable</DebugType>
     <AssemblyName>Invio.Xunit</AssemblyName>
     <PackageId>Invio.Xunit</PackageId>
     <PackageTags>xunit;test</PackageTags>
