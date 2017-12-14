@@ -6,6 +6,7 @@
     <Authors>Invio Inc &lt;developers@invioinc.com&gt;</Authors>
     <TargetFramework>netstandard1.1</TargetFramework>
     <DebugType>portable</DebugType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Invio.Xunit</AssemblyName>
     <PackageId>Invio.Xunit</PackageId>
     <PackageTags>xunit;test</PackageTags>
@@ -13,6 +14,7 @@
     <PackageLicenseUrl>https://github.com/invio/Invio.Xunit/blob/master/LICENSE.txt</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git@github.com:invio/Invio.Xunit</RepositoryUrl>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
