@@ -18,6 +18,10 @@ namespace Invio.Xunit {
         /// <param name="member">The member (method, field, etc.) to get the traits for.</param>
         /// <returns>A list of traits that are defined on the method.</returns>
         public static IReadOnlyList<KeyValuePair<string, string>> GetTraits(MemberInfo member) {
+            if (member == null) {
+                throw new ArgumentNullException(nameof(member));
+            }
+
             var messageSink = new NullMessageSink();
             var result = new List<KeyValuePair<string, string>>();
 

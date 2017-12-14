@@ -30,7 +30,7 @@ Features included here are what makes this library useful
 
 ## Category Attributes
 
-Category attributes allow you to specifc strongly typed classes which add the category as traits to the test method or class. This will allow for filtering execution runs based on these categories.
+Category attributes allow you to specify strongly typed classes which add the category as traits to the test method or class. This will allow for filtering execution runs based on these categories.
 
 ```csharp
 using Invio.Xunit;
@@ -58,12 +58,12 @@ public class TestFixture {
 }
 ```
 
-Filtering which tests run via the command line is based on using either `-trait` or `-notrait`.
+Filtering which tests run via the command line is done using `--filter`.
 
 ```shell
 # This will just run tests that are marked as Unit Tests
-$> dotnet test -trait "Category=Unit"
+$> dotnet test --filter Category=Unit
 
-# This will just run tests that are not marked as Integration or Benchmark Tests
-$> dotnet test -notrait "Category=Integration" -notrait "Category=Benchmark"
+# This will just run tests that are not marked as Integration
+$> dotnet test --filter Category!=Integration
 ```
