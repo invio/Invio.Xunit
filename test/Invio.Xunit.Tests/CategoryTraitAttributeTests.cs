@@ -7,6 +7,43 @@ namespace Invio.Xunit {
 
     public sealed class CategoryTraitAttributeTests {
 
+        [Fact]
+        public void Constructor_NullCategory() {
+
+            // Act
+
+            var exception = Record.Exception(
+                () => new PassthroughCategoryTraitAttribute(null)
+            );
+
+            // Assert
+
+            Assert.IsType<ArgumentNullException>(exception);
+        }
+
+        [Theory]
+        [InlineData("")]
+        [InlineData(" ")]
+        [InlineData("\t")]
+        public void Constructor_WhiteSpaceCategory(String category) {
+
+            // Act
+
+            var exception = Record.Exception(
+                () => new PassthroughCategoryTraitAttribute(category)
+            );
+
+            // Assert
+
+            Assert.IsType<ArgumentException>(exception);
+
+            Assert.Equal(
+                "The category cannot be null or whitespace." +
+                Environment.NewLine + "Parameter name: category",
+                exception.Message
+            );
+        }
+
         private const string traitName = "Category";
 
         [Theory]
@@ -134,6 +171,12 @@ namespace Invio.Xunit {
 
             Assert.Equal(traitName, trait.Key);
             Assert.Equal(categoryName, trait.Value);
+        }
+
+        public class PassthroughCategoryTraitAttribute : CategoryTraitAttribute {
+
+            public PassthroughCategoryTraitAttribute(String category) : base(category) {}
+
         }
 
     }

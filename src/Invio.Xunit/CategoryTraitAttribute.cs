@@ -12,7 +12,6 @@ namespace Invio.Xunit {
         /// </summary>
         public string Category { get; }
 
-
         /// <summary>
         ///   Initializes a new instance of the <see cref="CategoryTraitAttribute"/> class.
         /// </summary>
@@ -22,6 +21,11 @@ namespace Invio.Xunit {
         protected CategoryTraitAttribute(string category) {
             if (category == null) {
                 throw new ArgumentNullException(nameof(category));
+            } else if (String.IsNullOrWhiteSpace(category)) {
+                throw new ArgumentException(
+                    $"The {nameof(category)} cannot be null or whitespace.",
+                    nameof(category)
+                );
             }
 
             this.Category = category;
