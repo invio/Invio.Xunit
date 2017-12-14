@@ -7,6 +7,10 @@ namespace Invio.Xunit {
     /// </summary>
     public sealed class BenchmarkTestAttribute : CategoryTraitAttribute {
 
+        /// <summary>
+        ///   Instantiates a <see cref="CategoryTraitAttribute" /> with a
+        ///   <see cref="CategoryTraitAttribute.Category" /> value of "Benchmark".
+        /// </summary>
         public BenchmarkTestAttribute() : base("Benchmark") { }
 
     }
